@@ -1,389 +1,389 @@
 /* Change this file to get your personal Portfolio */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
+// To change portfolio colors globally go to the _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Myles Sartor",
+  title: "Hi, I'm Myles",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A Data Engineer who designs cloud-native ETL pipelines, geospatial analytics, and full-stack data applications 🚀. Currently pursuing a B.S. in Information Science (Data Specialization) with a Minor in Data Science at the University of Maryland, expected December 2026. I build scalable pipelines, optimize databases, and turn complex data into insights for stakeholders ranging from nonprofits to enterprise clients."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink: "/MylesSartorResume.pdf", // see instructions below to set this correctly
+  displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  github: "https://github.com/my1e2",
+  linkedin: "https://www.linkedin.com/in/myles-sartor-05a76b32a/",
+  gmail: "msartor@terpmail.umd.edu",
+  medium: "https://medium.com/@mylesgs03",
+  display: true
 };
 
 // Skills Section
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DATA ENGINEERING | SPATIAL ANALYTICS | FULL-STACK DATA APPLICATIONS",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Design and deploy serverless, event-driven ETL pipelines on AWS (S3, SQS, Lambda, RDS)"),
+    emoji("⚡ Build spatial data analysis pipelines and interactive ArcGIS applications"),
+    emoji("⚡ Design normalized relational databases (MySQL/PostgreSQL) and optimize query performance"),
+    emoji("⚡ Build machine learning pipelines for classification and clustering tasks"),
+    emoji("⚡ Develop full-stack web applications with React, Node/Express, and Supabase")
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  /* Make sure to use valid Font Awesome classnames: https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "java", fontAwesomeClassname: "fab fa-java" },
+    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "html-5", fontAwesomeClassname: "fab fa-html5" },
+    { skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt" },
+    { skillName: "reactjs", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "nodejs", fontAwesomeClassname: "fab fa-node" },
+    { skillName: "npm", fontAwesomeClassname: "fab fa-npm" },
+    { skillName: "sql-database", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "aws", fontAwesomeClassname: "fab fa-aws" },
+    { skillName: "git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "docker", fontAwesomeClassname: "fab fa-docker" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Maryland, College Park",
+      logo: require("./assets/images/umdLogo.png"), // placeholder logo — swap in your own image later
+      subHeader: "B.S. in Information Science (Data Specialization), Minor in Data Science",
+      duration: "Expected December 2026",
+      desc: "Relevant coursework: Linear Algebra, Discrete Mathematics, Probability & Statistics.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Awards: Princeton Book Award, Dean's List, Distinguished Dean's List",
+        "Certification: Researcher, FIRE (First-Year Innovation and Research Experience)"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Top proficient stacks
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, // set true and fill in real percentages below if you want a proficiency bar section
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
+    { Stack: "Data Engineering / ETL", progressPercentage: "85%" },
+    { Stack: "Spatial & Statistical Analysis", progressPercentage: "80%" },
+    { Stack: "Full-Stack Development", progressPercentage: "65%" }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Data Engineer Intern",
+      company: "CapTech — Airline Data & Analytics",
+      companylogo: require("./assets/images/captechLogo.png"), // placeholder logo — swap in your own image later
+      date: "June 2026 – August 2026",
+      desc: "Richmond, VA",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Architected and deployed a serverless, event-driven ETL pipeline on AWS (S3 → SQS → Lambda → RDS) using Python and the CDK/CLI",
+        "Developed EventBridge cron rules and a normalized PostgreSQL database for real-time analytics across 3 schemas, 20+ tables, and 30+ SQL views",
+        "Ingested ~60 million rows of data while monitoring outputs via AWS CloudWatch and a Power BI dashboard",
+        "Optimized query performance by 70% on multi-million-row tables using targeted indexing, precomputed lookup tables, and connection-pooled writes",
+        "Designed backend API delivery layers for low-latency streaming of RDS analytics outputs to a frontend UI"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Consultant I — iConsultancy Capstone",
+      company: "Southern Poverty Law Center (SPLC)",
+      companylogo: require("./assets/images/splcLogo.png"), // placeholder logo — swap in your own image later
+      date: "January 2026 – May 2026",
+      desc: "College Park, MD",
+      descBullets: [
+        "Designed a multi-method spatial data analysis pipeline (Python, R, SQL) calculating polling place accessibility across 203 population centers, deployed into 3 interactive ArcGIS applications with directional routing, isochrone maps, and live indicators",
+        "Presented findings to the SPLC client team alongside 10 peer consulting teams",
+        "Co-presented final research findings to 240+ SPLC staff and stakeholders; work referred to SPLC HR for recruitment consideration"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Math Tutor",
+      company: "Calvert Hall College High School — Community Service",
+      companylogo: require("./assets/images/calvertHallLogo.png"), // placeholder logo — swap in your own image later
+      date: "November 2019 – November 2021",
+      desc: "Towson, MD",
+      descBullets: [
+        "Tutored immigrant students in math subjects ranging from Algebra to Calculus II; supported academic mentorship"
+      ]
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+/* Open Source Section — your GitHub username is read from GITHUB_USERNAME in your .env file, not from this file */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
-// Some big projects you have worked on
+// Big Projects
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "SOME PROJECTS I'VE BUILT",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/blackMusicExplorer.png"), // placeholder image — swap in your own later
+      projectName: "Black Music Explorer",
+      projectDesc:
+        "Full-stack music discovery platform highlighting Black artists, genres, and cultural movements. React frontend, Node/Express backend, Spotify + MusicBrainz API integration, Supabase for auth/persistence, deployed on Vercel.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/my1e2/black-music-explorer" }]
+    },
+    {
+      image: require("./assets/images/musicGenrePrediction.png"),
+      projectName: "Music Genre Prediction — Exploratory Data Analysis",
+      projectDesc:
+        "Supervised ML pipeline classifying songs into 7 genres using audio and lyrical/NLP features. Evaluated Random Forest and Gradient Boosting models; explored K-Means and PCA for unsupervised structure discovery.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
+        { name: "GitHub", url: "https://github.com/my1e2/Music_Genre_Prediction_Refined" },
+        { name: "Article", url: "https://medium.com/@mylesgs03/a-refined-look-at-music-genres-with-supervised-learning-what-audio-and-lyrical-features-reveal-1a93e9778f25" }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/documentingHate.png"),
+      projectName: "Documenting Hate — Database Design & Modeling",
+      projectDesc:
+        "Designed a 7-table relational MySQL database from a raw ProPublica dataset, normalized to 3NF. Built a complex ERD and 5 SQL views/CTEs to analyze patterns across 45+ articles from 35 locations.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/my1e2/Documenting_Hate" }]
+    },
+    {
+      image: require("./assets/images/waisClimateAnalysis.png"),
+      projectName: "West Antarctic Ice Sheet (WAIS) Climate Analysis",
+      projectDesc:
+        "Geospatial climate analysis assessing WAIS susceptibility to rising temperatures using the Cheyenne supercomputer, CESM2.1, and WRF. Co-authored a research paper identifying a correlation between COVID-19 emissions reductions and short-term ice mass stabilization.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/my1e2/WAIS/tree/main" }]
+    },
+    {
+      image: require("./assets/images/alabamaVotingAccess.png"),
+      projectName: "Alabama Voting Access Analysis (SPLC Capstone Deliverables)",
+      projectDesc:
+        "Geospatial analysis of polling place accessibility in Montgomery County, Alabama. Calculates walking distances from population centers to polling locations, integrates demographic vulnerability indicators, and analyzes voter turnout patterns using multiple routing engines and isochrone generation.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/MawaSC/Alabama-Voting-Access-Analysis-BBPAD" }]
+    },
+    {
+      image: require("./assets/images/imdbFilmAnalysis.png"),
+      projectName: "IMDb Film Analysis (2000–2022)",
+      projectDesc:
+        "Combines a large IMDb JSON dataset with supplemental metadata from the OMDb REST API to explore films released between 2000 and 2022. Uses pandas and matplotlib to investigate relationships between genre, runtime, box office revenue, release year, and IMDb rating/vote count.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/my1e2/IMDb-Film-Data-Analysis" }]
+    },
+    {
+      image: require("./assets/images/textComplexityAnalysis.png"),
+      projectName: "Educational Text Complexity Analysis",
+      projectDesc:
+        "Guided exploratory data analysis of a multi-annotator educational text complexity dataset (CZI Learning Commons Literacy Evaluators project), covering annotation consistency, predictive relationships, human-vs-LLM annotation comparison, and readability score discrepancies.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/my1e2/Text-Complexity-Analysis" }]
+    },
+    {
+      image: require("./assets/images/citySimilarityAnalysis.png"),
+      projectName: "City Cosine Similarity Analysis",
+      projectDesc:
+        "City similarity search engine using cosine similarity over normalized geographic coordinates and population size. Identifies the ten most similar cities within the same country for query cities including New York, Paris, Tokyo, Mumbai, and Sydney.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
+        { name: "GitHub", url: "https://github.com/my1e2/City-Similarity-Analysis" },
+        { name: "Article", url: "https://medium.com/inst414-data-science-tech/a-tale-of-two-cities-using-cosine-similarity-to-identify-comparable-cities-worldwide-c322ced0169f" }
       ]
+    },
+    {
+      image: require("./assets/images/facebookNetworkAnalysis.png"),
+      projectName: "Facebook Social Network Analysis",
+      projectDesc:
+        "Exploratory analysis of the Facebook ego-network dataset (Stanford SNAP). Constructs an undirected graph, computes three centrality measures, examines network structure, and exports depth-2 ego networks to GraphML for Gephi visualization.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/my1e2/Facebook_Social_Network" },
+        { name: "Article", url: "https://medium.com/inst414-data-science-tech/small-world-phenomenon-a-network-analysis-of-facebooks-social-architecture-9b94a0210b94" }
+      ]
+    },
+    {
+      image: require("./assets/images/twitterClustering.png"),
+      projectName: "Twitter Social Network Clustering Analysis",
+      projectDesc:
+        "Applies unsupervised ML to a Twitter social network. Extracts degree and clustering coefficient features, applies K-Means with the elbow method, and profiles clusters across a 2x2 visualization dashboard.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/my1e2/Twitter-Network-Clustering" },
+        { name: "Article", url: "https://medium.com/inst414-data-science-tech/twitters-elaborate-social-network-clustering-analysis-f577f6405ffa" }
+      ]
+    },
+    {
+      image: require("./assets/images/musicalRollercoaster.png"),
+      projectName: "A Musical Rollercoaster: 70 Years of Lyrical and Thematic Excellence",
+      projectDesc:
+        "Analysis of 70 years of musical data investigating how lyrics and musical themes have transformed since the 1950s, culminating in the rise of hip-hop. Built using Pandas, Matplotlib, and Seaborn to tell a data-driven story.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/my1e2/Music_EDA" },
+        { name: "Article", url: "https://medium.com/@mylesgs03/a-musical-rollercoaster-70-years-of-lyrical-and-thematic-excellence-c1d9aecb8af7" }
+      ]
+    },
+    {
+      image: require("./assets/images/censusVisualizationReport.png"),
+      projectName: "Census Data Visualization Report",
+      projectDesc:
+        "Comprehensive analysis of U.S. Census data using R and Tidyverse to explore socioeconomic disparities across demographic and geographic dimensions. Includes 8 multivariate visualizations and data pipelines to clean and transform census datasets.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/my1e2/US_Census_Bureau_Report" }]
+    },
+    {
+      image: require("./assets/images/caregiverSchedule.png"),
+      projectName: "Caregiver Schedule",
+      projectDesc:
+        "GUI-based scheduling system in Python (Tkinter) with fully automated calendar/payroll generation, cutting manual scheduling work by several hours per week. Built on object-oriented principles, adaptable to organizations with up to 50+ employees.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/my1e2/INST326_Project03_56_Group" }]
+    },
+    {
+      image: require("./assets/images/fitnessApp.png"),
+      projectName: "Information Organization Fitness App",
+      projectDesc:
+        "Team-based information organization project researching user populations and data needs for a fitness app. Developed metadata schemas and UI design in Figma, and documented the implementation process in a finalized report.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/my1e2/Fitness-App" }]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
-// Include certificates, talks etc
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  subtitle: "Awards, certifications, and recognitions",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      title: "Princeton Book Award",
+      subtitle: "Awarded for academic excellence and leadership.",
+      image: require("./assets/images/princetonBookAward.png"), // placeholder image — swap in your own later
+      imageAlt: "Princeton Book Award",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      title: "Dean's List & Distinguished Dean's List",
+      subtitle: "University of Maryland, College Park — recognition for academic performance.",
+      image: require("./assets/images/deansListBadge.png"),
+      imageAlt: "Dean's List",
+      footerLink: []
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "Researcher — FIRE (First-Year Innovation and Research Experience)",
+      subtitle: "Certification for research contributions to the WAIS climate computing project.",
+      image: require("./assets/images/fireResearchBadge.png"),
+      imageAlt: "FIRE Researcher Certification",
+      footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  subtitle: "Writing on data, machine learning, and analysis",
+  displayMediumBlogs: "true", // pulls live blogs from your Medium username configured in .env
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      url: "https://medium.com/@mylesgs03/a-refined-look-at-music-genres-with-supervised-learning-what-audio-and-lyrical-features-reveal-1a93e9778f25?postPublishedType=repub",
+      title: "A Refined Look at Music Genres with Supervised Learning",
+      description: "What audio and lyrical features reveal about genre classification, using supervised and unsupervised ML techniques."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+      url: "https://medium.com/inst414-data-science-tech/twitters-elaborate-social-network-clustering-analysis-f577f6405ffa",
+      title: "Twitter's Elaborate Social Network Clustering Analysis",
+      description: "Using K-Means clustering on degree and clustering-coefficient features to uncover structurally distinct user groups in a Twitter follower graph."
+    },
+    {
+      url: "https://medium.com/inst414-data-science-tech/a-tale-of-two-cities-using-cosine-similarity-to-identify-comparable-cities-worldwide-c322ced0169f",
+      title: "A Tale of Two Cities: Using Cosine Similarity to Identify Comparable Cities Worldwide",
+      description: "Building a city similarity search engine with cosine similarity over geographic and population features."
+    },
+    {
+      url: "https://medium.com/inst414-data-science-tech/small-world-phenomenon-a-network-analysis-of-facebooks-social-architecture-9b94a0210b94",
+      title: "Small World Phenomenon: A Network Analysis of Facebook's Social Architecture",
+      description: "Exploring centrality, structure, and ego networks in the Facebook SNAP dataset."
+    },
+    {
+      url: "https://medium.com/@mylesgs03/a-musical-rollercoaster-70-years-of-lyrical-and-thematic-excellence-c1d9aecb8af7",
+      title: "A Musical Rollercoaster: 70 Years of Lyrical and Thematic Excellence",
+      description: "Investigating how lyrics and musical themes have transformed since the 1950s using Pandas, Matplotlib, and Seaborn."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Talks Sections
+// Talks Section (none provided — disabled)
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  talks: [],
+  display: false
 };
 
-// Podcast Section
+// Podcast Section (none provided — disabled)
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  podcast: [],
+  display: false
 };
 
 // Resume Section
+
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "Discuss data engineering, spatial analytics, or opportunities",
+  number: "732-947-1044",
+  email_address: "msartor@terpmail.umd.edu"
 };
 
-// Twitter Section
+// Twitter Section (not provided — disabled)
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "",
+  display: false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // set false if you are not currently looking for opportunities
 
 export {
   illustration,
