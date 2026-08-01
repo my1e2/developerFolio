@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/developerFolio/static/css/main.f7e48441.css",
-    "main.js": "/developerFolio/static/js/main.5e19b5e6.js",
+    "main.js": "/developerFolio/static/js/main.58eaa7a0.js",
     "static/css/487.bb36206c.chunk.css": "/developerFolio/static/css/487.bb36206c.chunk.css",
     "static/js/487.511983f8.chunk.js": "/developerFolio/static/js/487.511983f8.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/developerFolio/static/css/990.c6a7ee28.chunk.css",
@@ -9,9 +9,9 @@
     "static/media/censusVisualizationReport.png": "/developerFolio/static/media/censusVisualizationReport.e80e24aa32abfbe45bc4.png",
     "static/media/musicGenrePrediction.png": "/developerFolio/static/media/musicGenrePrediction.0e47b58a9120bf9158bd.png",
     "static/media/musicalRollercoaster.png": "/developerFolio/static/media/musicalRollercoaster.0e47b58a9120bf9158bd.png",
+    "static/media/resume.pdf": "/developerFolio/static/media/resume.c60de9471cced219ccfc.pdf",
     "static/media/Montserrat-Regular.ttf": "/developerFolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/citySimilarityAnalysis.png": "/developerFolio/static/media/citySimilarityAnalysis.5b6ea83c3b44618d9551.png",
-    "static/media/resume.pdf": "/developerFolio/static/media/resume.0ef0d501c10d9d6dd6fe.pdf",
     "static/media/deansListBadge.png": "/developerFolio/static/media/deansListBadge.5846f42d31eba522e91f.png",
     "static/media/calvertHallLogo.png": "/developerFolio/static/media/calvertHallLogo.88c62e7e04eb8e8bd81e.png",
     "static/media/Agustina.woff": "/developerFolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -28,7 +28,7 @@
     "index.html": "/developerFolio/index.html",
     "static/media/talksCardBack.svg": "/developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.f7e48441.css.map": "/developerFolio/static/css/main.f7e48441.css.map",
-    "main.5e19b5e6.js.map": "/developerFolio/static/js/main.5e19b5e6.js.map",
+    "main.58eaa7a0.js.map": "/developerFolio/static/js/main.58eaa7a0.js.map",
     "487.bb36206c.chunk.css.map": "/developerFolio/static/css/487.bb36206c.chunk.css.map",
     "487.511983f8.chunk.js.map": "/developerFolio/static/js/487.511983f8.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/developerFolio/static/css/990.c6a7ee28.chunk.css.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.f7e48441.css",
-    "static/js/main.5e19b5e6.js"
+    "static/js/main.58eaa7a0.js"
   ]
 }
